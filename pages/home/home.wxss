@@ -1,0 +1,127 @@
+/* pages/home/home.wxss */
+.home {
+  color: lightblue;
+}
+.view_text{
+  background: lightblue;
+  width: 100%;
+  height: 160px;
+  padding-top: 20px;
+}
+
+.text_1{
+  display: flex;
+  justify-content: center;
+}
+.text_2{
+  display: flex;
+  justify-content: center;
+}
+
+.text_11{
+font-size: 43rpx;
+color: hotpink;
+}
+
+.text_22{
+  font-size: 27rpx;
+  color: burlywood;
+}
+
+.view_button{
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 140px;
+  left: 5%;
+  background: #fff;
+  border-radius: 5rpx;
+  box-shadow: 0px 0px 10px #888;
+}
+
+.lblSelectedGift{
+  width: 90%;
+  height: 80%;
+  color: lightcoral;
+  font-size: 30rpx;
+  border: 1px dashed coral;
+  text-align: center;
+  line-height: 800%;
+}
+
+.giveMode{
+  position: relative;  
+  top: -30px;
+  width: 90%;
+  left: 5%;
+}
+.giveMode .lblModeExplain{
+  font-size: 30rpx;
+  color: #888;
+}
+
+.picker1{
+  height: 40px;
+  background: gainsboro;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  color: #888;
+  margin-top: 20rpx;
+  padding-left: 10px;
+}
+.picker1 .down{
+  padding-left: 50px;
+}
+
+.blessing{
+  margin-top: 40rpx;
+}
+
+.blessing .lblWishes{
+  color: #888;
+}
+.blessing input{
+  color: #888;
+  margin-top: 20rpx;
+  background: gainsboro;
+  height: 60px;
+  text-align: top;
+  padding-left: 10px;
+}
+
+.amount{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lblAmount{
+  text-align: center;
+  color: red;
+  font-size: 40rpx;
+}
+
+.view_check{
+  margin-top: 30rpx;
+}
+.view_check .btnCheck{
+  color: white;
+  background: red;
+  width: 100%;
+}
+
+.view_tips{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view_tips text{
+  font-size: 12px;
+  color: gray;
+}

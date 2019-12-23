@@ -1,0 +1,43 @@
+<!--pages/home/home.wxml-->
+<view class='home'>
+<view class='view_text'>
+<view class="text_1">
+<text class="text_11">自选礼包，买单送给好友挑</text>
+</view>
+<view class="text_2">
+<text class="text_22">你先买单，好友自己挑礼物，自填地址收货</text>
+</view>
+</view>
+<!--选择礼物-->
+<view class="view_button">
+<button id="selectGift" open-type="selectGift" size='mini' hidden="true" bindtap="selectGifts"/>
+<label class="lblSelectedGift" for="selectGift">选一档礼物-></label>
+</view>
+<!--赠送方式选择-->
+<view class='giveMode'>
+<label class='lblModeExplain'>赠送方式</label>
+<picker bindchange="bindModeChange" value="{{mode[idx].id}}" range="{{mode}}" range-key="{{'val'}}">
+<view class="picker1">
+{{mode[idx].val}}<text class='down'>{{mode[idx].note}}</text>
+</view>
+</picker>
+
+<view class='blessing'>
+<label class='lblWishes'>祝福语</label>
+<input type="text" placeholder="一点心意,好礼自选" placeholder-class="placeholder_style" name="data_wishes" value="{{data_wishes}}" />
+</view>
+
+<view class="amount">
+<label class="lblAmount">¥{{data_amount}}</label>
+</view>
+
+<view class="view_check">
+<button class="btnCheck" bindtap="checkMoney">买单送给好友挑</button>
+</view>
+
+<view class="view_tips">
+<text class="tips">赠送后退差额，72小时未送出的礼物全额退款</text>
+</view>
+
+</view>
+</view>

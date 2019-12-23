@@ -1,0 +1,46 @@
+<!--pages/giftlist/giftlist.wxml-->
+<view class="container">
+<!--nav-->
+<view class="header">
+<scroll-view class='scroll_w' scroll-x scroll-left="{{scrollLeft}}">
+<block wx:for="{{topNavs}}" wx:key="item.id">
+<view class="item {{curNavId==item.id ? 'on' : ''}}" bindtap="topNavChange" data-index="{{index}}" data-id="{{item.id}}">{{item.title}}</view>
+</block>
+</scroll-view>
+<view class="view_line"></view>
+</view>
+
+<!--list-->
+<scroll-view class='scroll_goods'>
+<view class="goods_type">
+<view wx:if="{{list}}">
+<block wx:for="{{list}}" wx:key="item.id">
+<view class="nav_section_items">
+<!--档位价格-->
+<view class="price_title" data-aid="{{item.id}}">
+<block w:if="{{item.type}}">
+<!--content-->
+<view class="section_content">
+<view class="price_type">
+<text>¥{{item.type}}</text>
+</view>
+<view class="choose_tips">
+<text>好友在{{item.count}}款礼品中挑选一款</text>
+</view>
+</view>
+
+<!--选择按钮-->
+<view class="view_choose">
+<button class="button_choose" bindtap="chooseGoods" data-id="item.id">
+选这档
+</button>
+</view>
+</block>
+
+</view>
+</view>
+</block>
+</view>
+</view>
+</scroll-view>
+</view>
