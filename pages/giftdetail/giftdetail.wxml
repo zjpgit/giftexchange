@@ -1,0 +1,6 @@
+<!--pages/giftdetail/giftdetail.wxml-->
+<scroll-view class="image_scrollview" scroll-y="{{true}}">
+<view wx:if="{{detail}}">
+<image src="{{detail.image}}" bindload="imageLoad" style="width: {{imageWidth}}px; height: {{imageHeight}}px; background: lightblue;" mode="aspectFill"/>
+</view>
+</scroll-view>
