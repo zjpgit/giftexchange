@@ -50,7 +50,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    
   },
 
   /**
@@ -86,5 +86,13 @@ Page({
       list: fileData.getGiftList()
     })
     console.log(that.data.list)
+  },
+
+  chooseGoods: function(e){
+    let id = parseInt(e.currentTarget.dataset.id)
+    //console.log(id)
+    wx.navigateTo({
+      url: '/pages/giftdetail/giftdetail',
+    })
   }
 })

@@ -3,7 +3,7 @@
 .header {
     box-sizing: border-box;
     width: 100%;
-    height: 140rpx;
+    height: 131rpx;
     line-height: 100rpx;
     text-align: center;
     z-index: 1;
@@ -13,8 +13,9 @@
 
 .scroll_w{
   width: 100%;
-  height: 140rpx;
+  height: 131rpx;
   white-space: nowrap;
+  background: white;
 }
 
 .header .item{
@@ -36,31 +37,24 @@
   font-weight: bold;
 }
 
-.view_line{
-  margin-left: 30rpx;
-  width: 100%;
-  height: 1px;
-  background: #F2F2F2;
-}
-
 .goods_type{
-  margin-top: 140rpx;
+  margin-top: 100rpx;
 }
 .nav_section_items{
+  margin-left: 30rpx;
+  padding:30rpx 0 0px 0;
+  position: relative;
+}
+.nav_section_items .price_title{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #F2F2F2;
-  margin-left: 30rpx;
-  padding:30rpx 0 30rpx 0;
   position: relative;
+  padding-right: 30rpx;
+  border-top: 1px solid #F2F2F2;
+  padding-top: 26px;
 }
-.nav_section_items .section_content .section_content_intro{
-  white-space:normal;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
+
 .nav_section_items .section_content .price_type{
   font-size: 18px;
   color: #FF4545;
@@ -73,14 +67,57 @@
   color: #4d4d4d;
 }
 
-.nav_section_items .view_choose{
-  width:80rpx;
-  height:80rpx;
-  font-size:26rpx;
-  border-radius:100%;
-  background:#d24a58;
+.nav_section_items .price_title .view_choose{
+  width:90px;
+  height:37px;
+  font-size:32rpx;
+  border-radius:20px;
+  background:#FF4545;
   line-height: 80rpx;
   color:#fff;
   text-align: center;
-  margin-top:35rpx;
+}
+.nav_section_items .price_title .view_choose:active{
+  background:#ddd;
+}
+
+.nav_section_items .view_goodsList{
+  width: 100%;
+  display: -webkit-box;
+  flex-direction: column;
+}
+
+.scroll_goodsList{
+  width: 100%;
+  height: 175px;
+  white-space: nowrap;
+}
+
+.nav_section_items .view_goodsList .view_image{
+  width: 155px;
+  height: 175px;
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  text-align: top;
+  flex-direction: column;
+  margin: 20px 8px 0 0;
+  padding-top: 10px;
+}
+
+.nav_section_items .view_goodsList .view_image>text{
+  font-size: 12px;
+  color: #B3B3B3;
+  width: 100%;
+  text-align: right;
+  padding-right: 12px;
+}
+
+.nav_section_items .view_goodsNotes{
+  margin: 20px 0 30px 0;
+}
+
+.nav_section_items .view_goodsNotes>text{
+  font-size: 12px;
+  color: #B3B3B3;
 }

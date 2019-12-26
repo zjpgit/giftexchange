@@ -31,66 +31,78 @@ function getIndexNavData(){
 function getGiftList(){
   var arr = [
     {
-      type: '28元档',
+      type: '28',
       count: 4,
       goods: [
         {
+          id: 0,
           money: 19,
           image: "../../images/banli.png"
         },
         {
+          id: 1,
           money: 21.5,
           image: "../../images/banli.png"
         },
         {
+          id: 2,
           money: 25.5,
           image: "../../images/banli.png"
         },
         {
+          id: 3,
           money: 27.5,
           image: "../../images/banli.png"
         }
       ],
     },
     {
-      type: '68元档',
+      type: '68',
       count: 4,
       goods: [
         {
+          id: 0,
           money: 58,
           image: "../../images/banli.png"
         },
         {
+          id: 1,
           money: 59,
           image: "../../images/banli.png"
         },
         {
+          id: 2,
           money: 68,
           image: "../../images/banli.png"
         },
         {
+          id: 3,
           money: 62.7,
           image: "../../images/banli.png"
         }
       ],
     },
     {
-      type: '128元档',
+      type: '128',
       count: 4,
       goods: [
         {
+          id: 0,
           money: 128,
           image: "../../images/banli.png"
         },
         {
+          id: 1,
           money: 106,
           image: "../../images/banli.png"
         },
         {
+          id: 2,
           money: 108,
           image: "../../images/banli.png"
         },
         {
+          id: 3,
           money: 122.7,
           image: "../../images/banli.png"
         }
@@ -100,10 +112,19 @@ function getGiftList(){
   return arr
 }
 
+function getGiftDetail(){
+  var t = {
+    id: 1,
+    image: '../../images/xiangqing.jpg'
+  }
+  return t
+}
+
 /*
  * 对外暴露接口
  */
 module.exports = {
   getIndexNavData: getIndexNavData,
-  getGiftList: getGiftList
+  getGiftList: getGiftList,
+  getGiftDetail: getGiftDetail
 }

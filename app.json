@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/giftlist/giftlist",
-    "pages/home/home"
+    "pages/giftdetail/giftdetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#add8e6",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "微信礼包",
     "navigationBarTextStyle": "black"
   },

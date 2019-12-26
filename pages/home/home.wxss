@@ -1,9 +1,6 @@
 /* pages/home/home.wxss */
-.home {
-  color: lightblue;
-}
 .view_text{
-  background: lightblue;
+  background: #FFF3F3;
   width: 100%;
   height: 160px;
   padding-top: 20px;
@@ -16,21 +13,22 @@
 .text_2{
   display: flex;
   justify-content: center;
+  margin-top: 8px;
 }
 
 .text_11{
-font-size: 43rpx;
-color: hotpink;
+font-size: 24px;
+color: #FF4545;
 }
 
 .text_22{
-  font-size: 27rpx;
-  color: burlywood;
+  font-size: 15px;
+  color: #998675;
 }
 
-.view_button{
+.view_chooseGoods{
   position: relative;
-  top: -70px;
+  top: -52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,30 +45,31 @@ color: hotpink;
   height: 80%;
   color: lightcoral;
   font-size: 30rpx;
-  border: 1px dashed coral;
+  border: 1px dashed #F9E0DC;
   text-align: center;
   line-height: 800%;
 }
 
 .giveMode{
   position: relative;  
-  top: -30px;
+  top: -20px;
   width: 90%;
   left: 5%;
 }
 .giveMode .lblModeExplain{
-  font-size: 30rpx;
-  color: #888;
+  font-size: 12px;
+  color: #999;
 }
 
 .picker1{
   height: 40px;
-  background: gainsboro;
+  background: #E6E6E6;
   display: flex;
   flex-direction: row;
   align-items: left;
   justify-content: left;
-  color: #888;
+  color: #666;
+  font-size: 15px;
   margin-top: 20rpx;
   padding-left: 10px;
 }
@@ -79,23 +78,25 @@ color: hotpink;
 }
 
 .blessing{
-  margin-top: 40rpx;
+  margin: 22px 0 14px 0;
 }
 
 .blessing .lblWishes{
-  color: #888;
+  color: #999;
+  font-size: 12px;
 }
 .blessing input{
-  color: #888;
+  color: #999;
+  font-size: 15px;
   margin-top: 20rpx;
-  background: gainsboro;
+  background: #E6E6E6;
   height: 60px;
   text-align: top;
   padding-left: 10px;
 }
 
 .amount{
-  margin-top: 30rpx;
+  margin-top: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,21 +108,23 @@ color: hotpink;
 }
 
 .view_check{
-  margin-top: 30rpx;
+  margin-top: 22px;
 }
 .view_check .btnCheck{
   color: white;
-  background: red;
+  background: #FF4545;
   width: 100%;
+  height: 48px;
+  font-size: 18px;
 }
 
 .view_tips{
-  margin-top: 30rpx;
+  margin-top: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .view_tips text{
   font-size: 12px;
-  color: gray;
+  color: #666;
 }

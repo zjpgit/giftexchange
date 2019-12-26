@@ -9,7 +9,7 @@
 </view>
 </view>
 <!--选择礼物-->
-<view class="view_button">
+<view class="view_chooseGoods">
 <button id="selectGift" open-type="selectGift" size='mini' hidden="true" bindtap="selectGifts"/>
 <label class="lblSelectedGift" for="selectGift">选一档礼物-></label>
 </view>

@@ -7,38 +7,50 @@
 <view class="item {{curNavId==item.id ? 'on' : ''}}" bindtap="topNavChange" data-index="{{index}}" data-id="{{item.id}}">{{item.title}}</view>
 </block>
 </scroll-view>
-<view class="view_line"></view>
 </view>
 
 <!--list-->
-<scroll-view class='scroll_goods'>
+<scroll-view class='scroll_goods' scroll-y="true">
 <view class="goods_type">
 <view wx:if="{{list}}">
 <block wx:for="{{list}}" wx:key="item.id">
 <view class="nav_section_items">
-<!--档位价格-->
-<view class="price_title" data-aid="{{item.id}}">
-<block w:if="{{item.type}}">
-<!--content-->
-<view class="section_content">
-<view class="price_type">
-<text>¥{{item.type}}</text>
-</view>
-<view class="choose_tips">
-<text>好友在{{item.count}}款礼品中挑选一款</text>
-</view>
+  <!--档位价格-->
+  <view class="price_title" data-aid="{{item.id}}">
+    <block w:if="{{item.type}}">
+      <!--content-->
+      <view class="section_content">
+        <view class="price_type">
+          <text>¥{{item.type}}元档</text>
+        </view>
+        <view class="choose_tips">
+          <text>好友在{{item.count}}款礼品中挑选一款</text>
+        </view>
+      </view>
+
+      <!--选择按钮-->
+      <view class="view_choose" data-id="{{item.id}}">
+        <text>选这档</text>
+      </view>
+    </block>
+  </view>
+  
+  <!--商品列表-->
+  <scroll-view class="scroll_goodsList" scroll-x="{{true}}">
+  <view class="view_goodsList">
+  <block wx:for-items="{{item.goods}}" wx:for-item="goods" wx:key="goods.id">
+  <view class="view_image">
+  <text>￥{{goods.money}}</text>
+  <image src="{{goods.image}}" style="width: 110px; height: 108px;" mode="aspectFill" bindtap="chooseGoods" />
+  </view>
+  </block>
+  </view>
+  </scroll-view>
+  <view class="view_goodsNotes">
+  <text>不同款礼品定价均在{{item.type}}元以内，差额赠后返还.</text>
+  </view>
 </view>
 
-<!--选择按钮-->
-<view class="view_choose">
-<button class="button_choose" bindtap="chooseGoods" data-id="item.id">
-选这档
-</button>
-</view>
-</block>
-
-</view>
-</view>
 </block>
 </view>
 </view>
