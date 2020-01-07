@@ -72,7 +72,7 @@
   height:37px;
   font-size:32rpx;
   border-radius:20px;
-  background:#FF4545;
+  background:#F35B58;
   line-height: 80rpx;
   color:#fff;
   text-align: center;
